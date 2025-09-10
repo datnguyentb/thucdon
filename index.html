@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Đơn Hàng Ngày Của Bé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>THỰC ĐƠN HÀNG NGÀY CỦA BÉ</h1>
+        <div>
+            <div>
+                <div class="header-info">
+                <div class="info-item">
+                    <label for="thu">Thứ</label>
+                    <input type="text" id="thu">
+                </div>
+                <div class="info-item">
+                    <label for="ngay">ngày</label>
+                    <input type="text" id="ngay">
+                </div>
+                <div class="info-item">
+                    <label for="thang">tháng</label>
+                    <input type="text" id="thang">
+                </div>
+                <div class="info-item">
+                    <label for="nam">năm</label>
+                    <input type="text" id="nam" value="2025">
+                </div>
+            </div>
+
+           <div class="sum">
+                <div class="tong-thu so-luong">
+                    <label for="soLuongHs">Số lượng hs:</label>
+                    <input type="text" id="soLuongHs" value="25">
+                </div>
+                <div class="tong-thu">
+                    <label for="tongThuHs">Tổng thu hs:</label>
+                    <input type="text" id="tongThuHs">
+                </div>
+
+            </div>
+           </div>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">STT</th>
+                    <th rowspan="2">BỮA ĂN</th>
+                    <th rowspan="2">THỰC PHẨM</th>
+                    <th colspan="4">CHI PHÍ</th>
+                    <th rowspan="2">Thao tác</th>
+                </tr>
+                <tr>
+                    <th>ĐƠN VỊ</th>
+                    <th>SỐ LƯỢNG</th>
+                    <th>ĐƠN GIÁ</th>
+                    <th>TỔNG SỐ TIỀN</th>
+                </tr>
+            </thead>
+            <tbody id="menu-body">
+                </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6" style="text-align: right;">Tổng cộng</td>
+                    <td id="tong-cong" style="font-weight: bold;"></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="signatures">
+            <div class="signature-block">
+                <span>Người nhận thực phẩm</span>
+                <input type="text" id="nguoiNhan" placeholder="Nhập tên người nhận" >
+            </div>
+            <div class="signature-block">
+                <span>Người lên thực đơn</span>
+                <input type="text" id="nguoiLen" placeholder="Nhập tên người lên thực đơn" >
+            </div>
+            <div class="signature-block">
+                <span>Người giao thực phẩm</span>
+                <input type="text" id="nguoiGiao" placeholder="Nhập tên người giao thực phẩm" >
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

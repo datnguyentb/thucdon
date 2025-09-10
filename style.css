@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #01579B;
+}
+
+.header-info, .tong-thu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.sum {
+    display: flex;
+    flex-direction: row;
+}
+
+.tong-thu {
+    justify-content: flex-start;
+}
+
+.so-luong {
+    margin-right: 15px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-item input {
+    max-width: 60px;
+    margin-left: 5px;
+}
+
+.info-item label, .tong-thu label {
+    font-weight: bold;
+}
+
+.header-info input, .tong-thu input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+td {
+    vertical-align: top;
+}
+
+input[type="number"], input[type="text"] {
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 4px;
+}
+
+.signatures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.signature-block {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signature-block input {
+    margin-top: 10px;
+    border: none;
+    /* border-bottom: 1px solid #000; */
+    text-align: center;
+}
+
+.add-row-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.action-cell {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.delete-row-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
