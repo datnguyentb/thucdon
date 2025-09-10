@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <button id="save-csv-btn" class="add-row-btn">Lưu File CSV</button>
         <label for="load-csv-file" class="add-row-btn" style="cursor:pointer; padding: 5px 10px;">Xem Lại</label>
         <input type="file" id="load-csv-file" accept=".csv" style="display:none;">
+        <button id="print-btn" class="add-row-btn">In</button>
     `;
+
     container.appendChild(actionButtons);
 
     function renderHeader() {
@@ -255,6 +257,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Gắn sự kiện cho các nút mới
     document.getElementById('save-csv-btn').addEventListener('click', saveCsv);
     document.getElementById('load-csv-file').addEventListener('change', loadCsv);
+    document.getElementById('print-btn').addEventListener('click', () => {
+        window.print();
+    });
+
 
     menuBody.addEventListener('input', (event) => {
         const row = event.target.closest('tr');
