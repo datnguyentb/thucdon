@@ -163,6 +163,11 @@ input[type="number"], input[type="text"] {
     outline: none;
   }
 
+  .action,
+  .delete-row-btn {
+    display: none;
+  }
+
   body {
     font-size: 14px;
   }
