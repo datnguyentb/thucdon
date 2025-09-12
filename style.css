@@ -30,14 +30,25 @@ h1 {
 .sum {
     display: flex;
     flex-direction: row;
+
+    
 }
+
+.sum input#soLuongHs {
+    max-width: 40px;
+} 
+
+.sum input#tongThuHs {
+    max-width: 120px;
+} 
+
 
 .tong-thu {
     justify-content: flex-start;
 }
 
 .so-luong {
-    margin-right: 15px;
+    margin-right: 50px;
 }
 
 .info-item {
@@ -47,7 +58,7 @@ h1 {
 }
 
 .info-item input {
-    max-width: 60px;
+    max-width: 40px;
     margin-left: 5px;
 }
 
@@ -85,11 +96,15 @@ td {
     vertical-align: top;
 }
 
+input {
+    border: dotted;
+}
+
 input[type="number"], input[type="text"] {
     width: 90%;
     box-sizing: border-box;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px dotted #ccc;
     outline: none;
     padding: 4px;
 }
@@ -181,6 +196,11 @@ input[type="number"], input[type="text"] {
     border: 1px solid #000;
     padding: 4px;
     text-align: center;
+  }
+
+  input {
+    border: none !important;
+    outline: none !important;
   }
 }
 
